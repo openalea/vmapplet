@@ -1,7 +1,7 @@
 import pytest
 
-from src.openalea.vmapplet.organs.fruit import Fruit, AppleFruit
-from src.openalea.vmapplet import FruitState
+from openalea.vmapplet.organs.fruit import Fruit, AppleFruit
+from openalea.vmapplet import FruitState
 
 
 def test_fruit_state():

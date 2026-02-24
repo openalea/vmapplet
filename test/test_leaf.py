@@ -1,7 +1,7 @@
 import pytest
 
-from src.openalea.vmapplet import AppleLeaf
-from src.openalea.vmapplet import LeafState
+from openalea.vmapplet import AppleLeaf
+from openalea.vmapplet import LeafState
 
 
 def test_apple_leaf_state():
@@ -23,7 +23,7 @@ class test_apple_leaf:
 
 def test_apple_leaf_compute_area_from_func():
     import pathlib
-    from src.openalea.vmapplet.tools import ReadFunction
+    from openalea.vmapplet.tools import ReadFunction
 
     f = AppleLeaf()
     f.age = 50

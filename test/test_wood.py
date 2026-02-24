@@ -1,4 +1,4 @@
-from src.openalea.vmapplet.organs.wood import Wood
+from openalea.vmapplet.organs.wood import Wood
 
 
 def test_wood():

@@ -1,4 +1,4 @@
-from src.openalea.vmapplet import Tree
+from openalea.vmapplet import Tree
 
 tolerance = 1e-16
 

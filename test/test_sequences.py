@@ -1,6 +1,6 @@
 import pytest
 
-from src.openalea.vmapplet import (
+from openalea.vmapplet import (
     Markov,
     terminal_fate,
     generate_trunk,
@@ -9,7 +9,7 @@ from src.openalea.vmapplet import (
     generate_short_sequence,
     _non_parametric_distribution,
 )
-from src.openalea.vmapplet import Observation
+from openalea.vmapplet import Observation
 
 
 def test_terminal_fate():

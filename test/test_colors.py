@@ -1,6 +1,6 @@
 import pytest
 
-from src.openalea.vmapplet import (
+from openalea.vmapplet import (
     Colors,
     Year,
     Zone,
@@ -8,7 +8,7 @@ from src.openalea.vmapplet import (
     ObservationColors,
     ColorInterface,
 )
-from src.openalea.vmapplet import Observation, Zone as ZoneEnum
+from openalea.vmapplet import Observation, Zone as ZoneEnum
 
 
 def test_colors():

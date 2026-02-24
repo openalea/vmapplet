@@ -1,6 +1,6 @@
 import pytest
 
-from src.openalea.vmapplet import srandom
+from openalea.vmapplet import srandom
 
 N = 100
 
