@@ -43,10 +43,10 @@ test:
     {% endfor %}
   imports:
     - openalea.vmapplet
-  source_files:
-    - test/**
-  commands:
-    - pytest -v
+#  source_files:
+#    - test/**
+#  commands:
+#    - pytest -v
 
 about:
   home: {{ home }}
