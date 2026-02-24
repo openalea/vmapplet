@@ -1,4 +1,4 @@
-from vmapplet.tools import surface
+from src.openalea.vmapplet.tools import surface
 
 
 class TestSurface:

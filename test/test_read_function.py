@@ -1,7 +1,7 @@
 import pytest
 import pathlib
 
-from vmapplet.tools.read_function import ReadFunction, _FSet
+from src.openalea.vmapplet.tools import ReadFunction, _FSet
 
 
 def test_read_function():
