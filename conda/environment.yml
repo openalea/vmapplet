@@ -21,5 +21,5 @@ dependencies:
   - black
   - pytest
   - pip:
-      - pgljupyter
+#      - pgljupyter
       - -e .."[doc, test]"

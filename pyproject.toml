@@ -59,7 +59,7 @@ dependencies = [
     "flake8",
     "mypy",
     "black",
-    "pgljupyter",
+#    "pgljupyter",
 ]
 
 
