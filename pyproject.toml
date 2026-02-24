@@ -1,11 +1,26 @@
 [build-system]
-requires = ["setuptools>=58"]
+requires = [
+    "setuptools",
+    "setuptools_scm",
+]
 build-backend = "setuptools.build_meta"
 
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["*"]
+
+[tool.setuptools]
+include-package-data = false # force explicit declaration of data (disable automatic inclusion)
+
+# enable dynamic version based on git tags
+[tool.setuptools_scm]
+# Format version to ease alignment with conda/meta.yaml tag-based versioning
+fallback_version = "0.1.0.dev0"
+version_scheme = "guess-next-dev"
+local_scheme = "no-local-version"
+
 [project]
-name = "vmapplet"
-version = "0.1.0"
-license = {file = "LICENSE.txt"}
+name = "openalea.vmapplet"
 authors = [
   { name = "Thomas Cokelaer" },
   { name = "Colin Smith" },
@@ -14,7 +29,75 @@ authors = [
 ]
 description = "Apple Tree simulation using Markov Chains based on MAppleT"
 readme = "README.md"
-requires-python = "~=3.10.0"
+license = "CECILL-C"
+license-files = ["LICEN[CS]E*"]
+requires-python = ">=3.10"
+dynamic = ["version"]
+keywords = ["openalea", "jupyter", "tree", "MTG", "lpy", "plantgl", "3D"]
+classifiers = [
+  "Intended Audience :: Science/Research",
+  "Intended Audience :: Developers",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Scientific/Engineering",
+]
 
-[tool.setuptools]
-packages = ["vmapplet"]
+dependencies = [
+    "jupyterlab",
+    "jupyterlab_widgets",
+    "ipywidgets",
+    "toml",
+    "scipy",
+    "xlrd",
+    "numpy",
+    "flake8",
+    "mypy",
+    "black",
+    "pgljupyter",
+]
+
+
+[project.optional-dependencies]
+test = [
+  "pytest",
+  "nbmake",
+]
+dev = [
+  "pytest >=6",
+  "pytest-cov >=3",
+]
+doc = [
+  "sphinx-autobuild",
+  "pydata-sphinx-theme",
+  "myst-parser",
+  "sphinx-favicon",
+  "ipykernel",
+  "sphinx-copybutton",
+  "ipython_genutils",
+  "nbsphinx",
+]
+
+# section specific to conda-only distributed package (not used by pip yet)
+[tool.conda.environment]
+channels = [
+  "openalea3",
+  "conda-forge"
+]
+dependencies = [
+    "openalea.lpy",
+    "openalea.plantgl",
+    "openalea.mtg",
+    "matplotlib-base",
+]
+
+[project.urls]
+Homepage = "https://vmapplet.readthedocs.io/"
+"Bug Tracker" = "https://github.com/openalea/vmapplet/issues"
+Discussions = "https://github.com/openalea/vmapplet/discussions"
+Changelog = "https://github.com/openalea/vmapplet/releases"
