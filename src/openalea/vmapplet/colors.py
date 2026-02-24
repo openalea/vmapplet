@@ -140,7 +140,7 @@ class ReactionWood(ColorInterface):
         return {}
 
     def get_color(self, reaction_wood):
-        from scipy import pi
+        from math import pi
 
         color = int(((reaction_wood / pi) * (47 - 32)) + 32)
         return color

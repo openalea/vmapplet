@@ -208,7 +208,8 @@ def _non_parametric_distribution(pdf):
     .. note:: The sum of PDF must be 1 (checked by this function)
 
     """
-    assert sum(pdf) == 1
+    epsd = np.finfo(np.float64).eps
+    assert abs(sum(pdf) - 1) < epsd
     target = srandom.random(1.0)
     cumulation = 0
     i = 0

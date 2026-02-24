@@ -1,7 +1,7 @@
 import pytest
 
 from openalea.vmapplet.organs.fruit import Fruit, AppleFruit
-from openalea.vmapplet import FruitState
+from openalea.vmapplet.enums import FruitState
 
 
 def test_fruit_state():
