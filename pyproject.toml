@@ -12,6 +12,9 @@ include = ["*"]
 [tool.setuptools]
 include-package-data = false # force explicit declaration of data (disable automatic inclusion)
 
+[tool.setuptools.package-data]
+"openalea.vmapplet" = ["data/markov/*", "data/markov/**/*"]
+
 # enable dynamic version based on git tags
 [tool.setuptools_scm]
 # Format version to ease alignment with conda/meta.yaml tag-based versioning

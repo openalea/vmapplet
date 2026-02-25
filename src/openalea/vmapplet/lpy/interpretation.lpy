@@ -2,10 +2,10 @@ import math
 
 from openalea.plantgl.all import Sphere
 
-from vmapplet import constants
-from vmapplet.enums import FruitState, LeafState
-from vmapplet.colors import Colors
-from vmapplet.tools.surface import (
+from openalea.vmapplet import constants
+from openalea.vmapplet.enums import FruitState, LeafState
+from openalea.vmapplet.colors import Colors
+from openalea.vmapplet.tools.surface import (
     leafSurface,
     groundSurface,
     petalSurface

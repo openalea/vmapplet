@@ -1,7 +1,7 @@
-from vmapplet.sequences import terminal_fate
-from vmapplet.physics import rotate_frame_at_branch, rupture
-from vmapplet.srandom import boolean_event
-from vmapplet.organs import (
+from openalea.vmapplet.sequences import terminal_fate
+from openalea.vmapplet.physics import rotate_frame_at_branch, rupture
+from openalea.vmapplet.srandom import boolean_event
+from openalea.vmapplet.organs import (
     MetamerData,
     AppleFruit,
     AppleLeaf,
@@ -9,7 +9,7 @@ from vmapplet.organs import (
     Wood,
     Internode
 )
-from vmapplet.enums import Observation
+from openalea.vmapplet.enums import Observation
 
 wood = Wood(**options.wood)
 internode = Internode(**options.internode)

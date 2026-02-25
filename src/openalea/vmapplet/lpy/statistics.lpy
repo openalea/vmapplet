@@ -1,12 +1,12 @@
 import random
 
-from vmapplet.sequences import (
+from openalea.vmapplet.sequences import (
     generate_sequence,
     terminal_fate
 )
-from vmapplet.srandom import boolean_event
-from vmapplet.organs.growth_unit import GrowthUnitData
-from vmapplet.enums import Observation
+from openalea.vmapplet.srandom import boolean_event
+from openalea.vmapplet.organs.growth_unit import GrowthUnitData
+from openalea.vmapplet.enums import Observation
 
 # TODO: implement
 sylleptic_year = False
