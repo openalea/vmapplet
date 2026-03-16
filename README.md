@@ -28,7 +28,7 @@ A refactored and enhanced implementation of MAppleT/StocaTree. Original sources 
 
 ### Institutes
 
-CIRAD / inria
+CIRAD / inria / INRAE
 
 ### Status
 
