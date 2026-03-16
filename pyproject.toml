@@ -13,7 +13,7 @@ include = ["*"]
 include-package-data = false # force explicit declaration of data (disable automatic inclusion)
 
 [tool.setuptools.package-data]
-"openalea.vmapplet" = ["data/markov/*", "data/markov/**/*"]
+"openalea.vmapplet" = ["data/markov/*", "data/markov/**/*", "data/lpy/*", "data/trunk/*"]
 
 # enable dynamic version based on git tags
 [tool.setuptools_scm]
