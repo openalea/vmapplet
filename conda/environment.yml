@@ -8,7 +8,7 @@ dependencies:
   - jupyterlab_widgets
   - ipywidgets
   - toml
-  - matplotlib
+  - matplotlib-base
   - scipy
   - openalea.lpy
   - openalea.plantgl
@@ -19,7 +19,5 @@ dependencies:
   - flake8
   - mypy
   - black
-  - pytest
   - pip:
-#      - pgljupyter
       - -e .."[doc, test]"
