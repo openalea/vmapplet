@@ -1,4 +1,4 @@
-from vmapplet.physics import *
+from openalea.vmapplet.physics import *
 
 module apex(apex_data): scale=2
 module branch(): scale=1

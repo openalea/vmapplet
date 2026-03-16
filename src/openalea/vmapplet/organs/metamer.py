@@ -384,7 +384,7 @@ class MetamerData:
 
         """
         self.cumulated_mass = (
-            constants.pi * self.radius * self.radius * self.length * self.wood._density
+                constants.pi * self.radius * self.radius * self.length * self.wood._density
         )
         self.cumulated_mass += self.leaf.mass + self.fruit.mass
 

@@ -1,8 +1,8 @@
 import pytest
 
-from vmapplet.organs.apex import ApexData
-from vmapplet.enums import Observation
-from vmapplet.sequences import generate_sequence, Markov
+from openalea.vmapplet.organs.apex import ApexData
+from openalea.vmapplet.enums import Observation
+from openalea.vmapplet.sequences import generate_sequence, Markov
 
 markov = Markov()
 

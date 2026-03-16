@@ -1,7 +1,7 @@
 import pytest
 
-from vmapplet.organs import AppleLeaf
-from vmapplet.enums import LeafState
+from openalea.vmapplet.organs.leaf import AppleLeaf
+from openalea.vmapplet.enums import LeafState
 
 
 def test_apple_leaf_state():
@@ -23,7 +23,7 @@ class test_apple_leaf:
 
 def test_apple_leaf_compute_area_from_func():
     import pathlib
-    from vmapplet.tools.read_function import ReadFunction
+    from openalea.vmapplet.tools.read_function import ReadFunction
 
     f = AppleLeaf()
     f.age = 50

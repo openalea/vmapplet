@@ -1,0 +1,23 @@
+name: vmapplet_dev
+channels:
+  - openalea3
+  - conda-forge
+dependencies:
+  - python
+  - jupyterlab
+  - jupyterlab_widgets
+  - ipywidgets
+  - toml
+  - matplotlib-base
+  - scipy
+  - openalea.lpy
+  - openalea.plantgl
+  - openalea.mtg
+  - xlrd
+  - pip
+  - numpy
+  - flake8
+  - mypy
+  - black
+  - pip:
+      - -e .."[doc, test]"

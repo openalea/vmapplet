@@ -1,6 +1,6 @@
-from openalea.plantgl.all import Vector3, Vector4
+from openalea.plantgl.all import Vector3
 
-from vmapplet.physics import (
+from openalea.vmapplet.physics import (
     stress,
     rupture,
     second_moment_of_area_annular_section,

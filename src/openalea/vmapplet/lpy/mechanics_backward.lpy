@@ -1,10 +1,10 @@
 import openalea.plantgl.all as pgl
 
-from vmapplet import (
+from openalea.vmapplet import (
     constants
 )
-from vmapplet.enums import LeafState
-from vmapplet.physics import *
+from openalea.vmapplet.enums import LeafState
+from openalea.vmapplet.physics import *
 
 gravity = pgl.Vector3(0.0, 0.0, -9.81)
 
